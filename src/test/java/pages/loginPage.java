@@ -8,24 +8,24 @@ import org.openqa.selenium.support.PageFactory;
 import base.TestBase;
 import org.testng.Assert;
 
-public class LoginPage extends TestBase {
+public class loginPage extends TestBase {
 	
 	@FindBy(xpath = "//li/a[@id='login2']")
-	WebElement logintab;
+	WebElement loginButton;
 	
 	@FindBy(xpath = "//button[@onclick='logIn()']")
-	WebElement Sbtlogin;
+	WebElement Submit;
 	
-	public LoginPage() {
+	public loginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	 public void login() throws InterruptedException {
 		 System.out.println("driver="+driver);
-		 logintab.click();
+		 loginButton.click();
 		 driver.findElement(By.xpath("//input[@id='loginusername']")).sendKeys("Esaki1");
 		 driver.findElement(By.xpath("//input[@id='loginpassword']")).sendKeys("Muthu");
-		 Sbtlogin.click();
+		 Submit.click();
 		 Thread.sleep(3000);
 		 driver.findElement(By.xpath("//li/a[contains(text(),'Home')]")).click();
 		 WebElement who = driver.findElement(By.xpath("//li/a[@id='nameofuser']"));

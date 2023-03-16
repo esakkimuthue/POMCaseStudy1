@@ -11,27 +11,27 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.TestBase;
 
-public class HomePage extends TestBase {
+public class homePage extends TestBase {
 	
-	public HomePage() {
+	public homePage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void SelectItems(String category, String itemName) throws InterruptedException {
+	public void SelectItems(String category, String item) throws InterruptedException {
 		
 		driver.findElement(By.xpath("//a[text()='Home ']")).click();
 		Thread.sleep(2000);
-		String currentCategory = "//a[text()='"+category+"']";
-		driver.findElement(By.xpath(currentCategory)).click();
+		String openedCategory = "//a[text()='"+category+"']";
+		driver.findElement(By.xpath(openedCategory)).click();
 		Thread.sleep(2000);
-		String currentItem = "//a[text()='"+itemName+"']";
-		driver.findElement(By.xpath(currentItem)).click();
+		String openedItem = "//a[text()='"+item+"']";
+		driver.findElement(By.xpath(openedItem)).click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement btn = driver.findElement(By.xpath("//a[text()='Add to cart']"));
-		wait.until(ExpectedConditions.elementToBeClickable(btn));
-		btn.click();
+		WebElement button = driver.findElement(By.xpath("//a[text()='Add to cart']"));
+		wait.until(ExpectedConditions.elementToBeClickable(button));
+		button.click();
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert = driver.switchTo().alert();
-		System.out.println(itemName+","+alert.getText());
+		System.out.println(item+","+alert.getText());
 		alert.accept();
 }}

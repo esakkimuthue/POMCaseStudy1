@@ -8,27 +8,27 @@ import org.testng.Assert;
 
 import base.TestBase;
 
-public class CartPage extends TestBase {
+public class cartPage extends TestBase {
 	
 	@FindBy(xpath = "//li/a[@id='cartur']")
 	WebElement Cart;
 	
 	@FindBy(xpath = "//div/h3")
-	WebElement BefDel;
+	WebElement beforeDel;
 	
 	@FindBy(xpath = "//div/h3")
-	WebElement AftDel;
+	WebElement afterDel;
 	
 	@FindBy(xpath = "//td/a")
-	WebElement Delbtn;
+	WebElement delBtn;
 	
 	@FindBy(xpath="//td/a")
-	WebElement DelClk;
+	WebElement clickDel;
 	
 	@FindBy(xpath = "//button[@class='btn btn-success']")
-	WebElement Orderbtn;
+	WebElement ok;
 	
-	public CartPage() {
+	public cartPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -36,9 +36,9 @@ public class CartPage extends TestBase {
 		
 		Cart.click();
 		Thread.sleep(3000);
-		String then = BefDel.getText();
-		DelClk.click();
-		String now = AftDel.getText();
+		String then = beforeDel.getText();
+		clickDel.click();
+		String now = afterDel.getText();
 		if(then.equals(now)) {
 			System.out.println("Item Deleted");
 		}

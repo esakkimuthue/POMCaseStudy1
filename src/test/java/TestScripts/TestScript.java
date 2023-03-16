@@ -20,9 +20,9 @@ import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
 
 import base.TestBase;
-import pages.CartPage;
-import pages.HomePage;
-import pages.LoginPage;
+import pages.cartPage;
+import pages.homePage;
+import pages.loginPage;
 
 public class TestScript extends TestBase {
 	
@@ -43,34 +43,34 @@ public class TestScript extends TestBase {
 	}
 	
 	@Test(priority=1)
-	public void loginTest() throws InterruptedException, IOException {
+	public void loginPagesTest() throws InterruptedException, IOException {
 		
 		extentTest = reports.createTest("login Test");
-		LoginPage log = new LoginPage();
+		loginPage log = new loginPage();
 		log.login();
 	 
 	}
 	
 	@Test(priority=2, dataProvider="Catalogue")
-	public void ClickItems(String category, String itemName) throws InterruptedException {
+	public void addingItems(String category, String itemName) throws InterruptedException {
 		extentTest = reports.createTest("AddItems Test");
-		HomePage items = new HomePage();
+		homePage items = new homePage();
 		items.SelectItems(category, itemName);
 	}
 	
 	@Test(priority=3)
-	public void RemoveItem() throws InterruptedException {
+	public void delItem() throws InterruptedException {
 		extentTest = reports.createTest("DeleteItems Test");
-		CartPage pdt =new CartPage();
-		pdt.DeleteItem();
+		cartPage product =new cartPage();
+		product.DeleteItem();
 			
 		}
 	
 	@Test(priority=4)
 	public void PlaceOrder() throws InterruptedException {
 		extentTest = reports.createTest("PlaceOrder Test");
-		CartPage buy = new CartPage();
-		buy.PlaceOrder();
+		cartPage purchase = new cartPage();
+		purchase.PlaceOrder();
 	}
 	
 	@DataProvider(name="Catalogue")
