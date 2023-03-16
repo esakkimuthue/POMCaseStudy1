@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52234" started-at="2023-03-16T10:18:22 IST" finished-at="2023-03-16T10:19:15 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52234" started-at="2023-03-16T10:18:22 IST" finished-at="2023-03-16T10:19:15 IST">
+      <class name="TestScripts.TestScript">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="setup" is-config="true" duration-ms="6111" started-at="2023-03-16T10:18:22 IST" finished-at="2023-03-16T10:18:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupExtent()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="setupExtent" is-config="true" duration-ms="310" started-at="2023-03-16T10:18:29 IST" finished-at="2023-03-16T10:18:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:TestScripts.TestScript@548ad73b]" name="loginTest" duration-ms="7058" started-at="2023-03-16T10:18:29 IST" finished-at="2023-03-16T10:18:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestScripts.TestScript@548ad73b]" name="teardown" is-config="true" duration-ms="2" started-at="2023-03-16T10:18:36 IST" finished-at="2023-03-16T10:18:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=TestScript.loginTest()[pri:1, instance:TestScripts.TestScript@548ad73b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="ClickItems(java.lang.String,java.lang.String)[pri:2, instance:TestScripts.TestScript@548ad73b]" name="ClickItems" duration-ms="9331" started-at="2023-03-16T10:18:36 IST" data-provider="Catalogue" finished-at="2023-03-16T10:18:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laptops]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MacBook air]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickItems -->
+        <test-method status="PASS" signature="setupExtent()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="setupExtent" is-config="true" duration-ms="0" started-at="2023-03-16T10:18:36 IST" finished-at="2023-03-16T10:18:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestScripts.TestScript@548ad73b]" name="teardown" is-config="true" duration-ms="5" started-at="2023-03-16T10:18:45 IST" finished-at="2023-03-16T10:18:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickItems status=SUCCESS method=TestScript.ClickItems(java.lang.String,java.lang.String)[pri:2, instance:TestScripts.TestScript@548ad73b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="ClickItems(java.lang.String,java.lang.String)[pri:2, instance:TestScripts.TestScript@548ad73b]" name="ClickItems" duration-ms="10654" started-at="2023-03-16T10:18:45 IST" data-provider="Catalogue" finished-at="2023-03-16T10:18:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Phones]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nexus 6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickItems -->
+        <test-method status="PASS" signature="setupExtent()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="setupExtent" is-config="true" duration-ms="0" started-at="2023-03-16T10:18:45 IST" finished-at="2023-03-16T10:18:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestScripts.TestScript@548ad73b]" name="teardown" is-config="true" duration-ms="0" started-at="2023-03-16T10:18:56 IST" finished-at="2023-03-16T10:18:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickItems status=SUCCESS method=TestScript.ClickItems(java.lang.String,java.lang.String)[pri:2, instance:TestScripts.TestScript@548ad73b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupExtent()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="setupExtent" is-config="true" duration-ms="2" started-at="2023-03-16T10:18:56 IST" finished-at="2023-03-16T10:18:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method status="PASS" signature="RemoveItem()[pri:3, instance:TestScripts.TestScript@548ad73b]" name="RemoveItem" duration-ms="4105" started-at="2023-03-16T10:18:56 IST" finished-at="2023-03-16T10:19:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveItem -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestScripts.TestScript@548ad73b]" name="teardown" is-config="true" duration-ms="0" started-at="2023-03-16T10:19:00 IST" finished-at="2023-03-16T10:19:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RemoveItem status=SUCCESS method=TestScript.RemoveItem()[pri:3, instance:TestScripts.TestScript@548ad73b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="PlaceOrder()[pri:4, instance:TestScripts.TestScript@548ad73b]" name="PlaceOrder" duration-ms="13681" started-at="2023-03-16T10:19:00 IST" finished-at="2023-03-16T10:19:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrder -->
+        <test-method status="PASS" signature="setupExtent()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="setupExtent" is-config="true" duration-ms="0" started-at="2023-03-16T10:19:00 IST" finished-at="2023-03-16T10:19:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestScripts.TestScript@548ad73b]" name="teardown" is-config="true" duration-ms="0" started-at="2023-03-16T10:19:14 IST" finished-at="2023-03-16T10:19:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PlaceOrder status=SUCCESS method=TestScript.PlaceOrder()[pri:4, instance:TestScripts.TestScript@548ad73b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="Extent()[pri:0, instance:TestScripts.TestScript@548ad73b]" name="Extent" is-config="true" duration-ms="870" started-at="2023-03-16T10:19:14 IST" finished-at="2023-03-16T10:19:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Extent -->
+      </class> <!-- TestScripts.TestScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
