@@ -11,13 +11,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.TestBase;
 
-public class homePage extends TestBase {
+public class HomePage extends TestBase {
 	
-	public homePage() {
+	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void SelectItems(String category, String item) throws InterruptedException {
+	public void selectItems(String category, String item) throws InterruptedException {
 		
 		driver.findElement(By.xpath("//a[text()='Home ']")).click();
 		Thread.sleep(2000);

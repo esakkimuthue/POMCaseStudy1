@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import base.TestBase;
 import org.testng.Assert;
 
-public class loginPage extends TestBase {
+public class LoginPage extends TestBase {
 	
 	@FindBy(xpath = "//li/a[@id='login2']")
 	WebElement loginButton;
@@ -16,7 +16,7 @@ public class loginPage extends TestBase {
 	@FindBy(xpath = "//button[@onclick='logIn()']")
 	WebElement Submit;
 	
-	public loginPage() {
+	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

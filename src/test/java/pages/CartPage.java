@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 import base.TestBase;
 
-public class cartPage extends TestBase {
+public class CartPage extends TestBase {
 	
 	@FindBy(xpath = "//li/a[@id='cartur']")
 	WebElement Cart;
@@ -28,11 +28,11 @@ public class cartPage extends TestBase {
 	@FindBy(xpath = "//button[@class='btn btn-success']")
 	WebElement ok;
 	
-	public cartPage() {
+	public CartPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void DeleteItem() throws InterruptedException {
+	public void deleteItem() throws InterruptedException {
 		
 		Cart.click();
 		Thread.sleep(3000);
@@ -49,7 +49,7 @@ public class cartPage extends TestBase {
 		
 	}
 	
-	public void PlaceOrder() throws InterruptedException {
+	public void placeOrder() throws InterruptedException {
 		Thread.sleep(4000);
 		driver.findElement(By.cssSelector("button[data-toggle='modal']")).click(); 
 	    Thread.sleep (3000);
